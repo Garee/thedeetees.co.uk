@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { GetStaticProps } from "next";
 import Link from "next/link";
+import Head from "next/head";
 import Layout from "../components/layout";
 import Date from "../components/date";
 import Music from "../components/music";
@@ -11,6 +12,13 @@ import { getSortedPostsData, Post } from "../lib/posts";
 import { getAllAudioSrc } from "../lib/audio";
 import { getAllShows, Show } from "../lib/shows";
 import { social } from "../lib/config";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    netlifyIdentity: any;
+  }
+}
 
 interface HomeProps {
   body: string;
@@ -112,44 +120,66 @@ export default function Home({
   tracks,
   shows,
 }: HomeProps): JSX.Element {
+  useEffect(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user: any) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin";
+          });
+        }
+      });
+
+      window.netlifyIdentity.init();
+    }
+  }, []);
+
   return (
-    <Layout>
-      <section>
-        <YoutubeVideo />
-      </section>
-      <section className={utilStyles.headingMd} id="about">
-        <p dangerouslySetInnerHTML={{ __html: body }}></p>
-      </section>
-      <section id="social">
-        <Social />
-      </section>
-      <section id="music">
-        <Music tracks={tracks} />
-      </section>
-      <section id="shows">
-        <Shows shows={shows} />
-      </section>
-      <section id="posts">
-        <h2>Latest Posts</h2>
-        <ul className={utilStyles.list}>
-          {posts.map((p: Post) => (
-            <li className={utilStyles.listItem} key={p.id}>
-              <Link href={`/posts/${p.id}`}>
-                <a>
-                  <h3 className={utilStyles.headingMd}>{p.title}</h3>
-                </a>
-              </Link>
-              <small>
-                📰 <Date dateString={p.date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-    </Layout>
+    <>
+      <Head>
+        <script
+          defer
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+        ></script>
+      </Head>
+      <Layout>
+        <section>
+          <YoutubeVideo />
+        </section>
+        <section className={utilStyles.headingMd} id="about">
+          <p dangerouslySetInnerHTML={{ __html: body }}></p>
+        </section>
+        <section id="social">
+          <Social />
+        </section>
+        <section id="music">
+          <Music tracks={tracks} />
+        </section>
+        <section id="shows">
+          <Shows shows={shows} />
+        </section>
+        <section id="posts">
+          <h2>Latest Posts</h2>
+          <ul className={utilStyles.list}>
+            {posts.map((p: Post) => (
+              <li className={utilStyles.listItem} key={p.id}>
+                <Link href={`/posts/${p.id}`}>
+                  <a>
+                    <h3 className={utilStyles.headingMd}>{p.title}</h3>
+                  </a>
+                </Link>
+                <small>
+                  📰 <Date dateString={p.date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </Layout>
+    </>
   );
 }
 
