@@ -3,7 +3,7 @@ import posts from "../mocks/posts";
 import Index from "../../pages/index";
 
 describe("index page", () => {
-  const props = { body: "", posts };
+  const props = { body: "", posts, tracks: [], shows: [] };
   const index = <Index {...props} />;
 
   it("renders correctly", () => {
