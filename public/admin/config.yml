@@ -3,7 +3,7 @@ display_url: https://thedeetees.co.uk
 backend:
   name: git-gateway # test-repo https://www.netlifycms.org/docs/git-gateway-backend/
   branch: main
-local_backend: true # https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+local_backend: false # https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 publish_mode: editorial_workflow
 media_folder: public/images
 public_folder: images
