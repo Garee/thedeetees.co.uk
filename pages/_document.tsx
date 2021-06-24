@@ -1,5 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+declare global {
+  interface Window {
+    netlifyIdentity: {
+      on(event: string, cb: (...args: any[]) => void): void;
+    };
+  }
+}
+
 class AppDocument extends Document {
   render() {
     return (
@@ -13,6 +21,7 @@ class AppDocument extends Document {
             defer
             src="https://identity.netlify.com/v1/netlify-identity-widget.js"
           />
+          <script defer src="/admin/identity.js"></script>
         </Head>
         <body>
           <Main />
