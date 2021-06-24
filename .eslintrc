@@ -1,0 +1,15 @@
+// https://eslint.org/docs/user-guide/configuring/configuration-files
+{
+  "extends": ["next", "next/core-web-vitals", "prettier", "plugin:jest/all"],
+  "plugins": ["testing-library"],
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      // Only apply the testing-library lints to the test files.
+      "files": ["**/__tests__/**/*.ts?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
+}
