@@ -10,6 +10,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData, Post as PostData } from "../../lib/posts";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.scss";
+import { appName } from "../../lib/config";
 
 type PostProps = PostData;
 
@@ -17,7 +18,9 @@ export default function Post({ title, date, body }: PostProps) {
   return (
     <Layout>
       <Head>
-        <title>{title}</title>
+        <title>
+          {title} | {appName}
+        </title>
       </Head>
       <h1 className={utilStyles.headingXl}>{title}</h1>
       <small className={utilStyles.lightText}>

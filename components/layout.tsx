@@ -11,6 +11,19 @@ interface LayoutProps {
   children: JSX.Element[] | JSX.Element;
 }
 
+function Footer() {
+  return (
+    <footer
+      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+    >
+      <hr style={{ width: "100%" }} />
+      <small>
+        © {new Date().getFullYear()}, {appName} 🎸
+      </small>
+    </footer>
+  );
+}
+
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
@@ -43,7 +56,7 @@ export default function Layout({ children }: LayoutProps) {
               alt={appName}
             />
             <Link href="/">
-              <a>
+              <a style={{ textDecoration: "none" }}>
                 <h1 className={utilStyles.heading2Xl}>{appName}</h1>
               </a>
             </Link>
@@ -60,6 +73,7 @@ export default function Layout({ children }: LayoutProps) {
         }
       </header>
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }

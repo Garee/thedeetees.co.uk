@@ -1,0 +1,16 @@
+.figure {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.figCaption {
+  text-transform: capitalize;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .figure {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}

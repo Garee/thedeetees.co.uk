@@ -38,11 +38,11 @@ npm run build
 
 ## TODO
 
-- [ ] Add social media links.
-- [ ] Add audio player.
-- [ ] Add YouTube video(s).
-- [ ] Add list of posts.
-- [ ] Add shows page.
+- [x] Add social media links.
+- [x] Add audio player.
+- [x] Add YouTube video(s).
+- [x] Add list of posts.
+- [x] Add shows page.
 - [ ] Add photo gallery.
-- [ ] Add contact details.
-- [ ] Add bio.
+- [x] Add contact details.
+- [x] Add bio.
