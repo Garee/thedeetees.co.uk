@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 // https://nextjs.org/docs/api-reference/next/head
 import Head from "next/head";
 // https://nextjs.org/docs/basic-features/image-optimization#image-component
-import Image from "next/image";
 import Link from "next/link";
 import { appAuthor, appDescription, appName, appSite } from "../lib/config";
 import styles from "./layout.module.scss";
@@ -47,8 +47,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className={styles.header}>
         {
           <>
-            <Image
-              priority
+            <img
               src="/images/icon.jpg"
               className={utilStyles.borderCircle}
               height={144}

@@ -7,78 +7,29 @@ exports[`post page renders correctly 1`] = `
   <header
     className="header"
   >
-    <div
+    <img
+      alt="The Deetees"
+      className="borderCircle"
+      height={144}
+      src="/images/icon.jpg"
+      width={144}
+    />
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
       style={
         Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "margin": 0,
-          "maxWidth": "100%",
-          "overflow": "hidden",
-          "position": "relative",
+          "textDecoration": "none",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "maxWidth": "100%",
-          }
-        }
+      <h1
+        className="heading2Xl"
       >
-        <img
-          alt=""
-          aria-hidden={true}
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style={
-            Object {
-              "border": "none",
-              "display": "block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "padding": 0,
-            }
-          }
-        />
-      </div>
-      <img
-        alt="The Deetees"
-        className="borderCircle"
-        decoding="async"
-        src="/_next/image?url=%2Fimages%2Ficon.jpg&w=384&q=75"
-        srcSet="/_next/image?url=%2Fimages%2Ficon.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ficon.jpg&w=384&q=75 2x"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": 0,
-          }
-        }
-      />
-    </div>
-    <h1
-      className="heading2Xl"
-    >
-      The Deetees
-    </h1>
+        The Deetees
+      </h1>
+    </a>
     <nav>
       <a
         href="#about"
@@ -117,7 +68,7 @@ exports[`post page renders correctly 1`] = `
       <time
         dateTime="2021-01-01"
       >
-        January 1, 2021
+        1 January, 2021
       </time>
     </small>
     <br />
@@ -128,6 +79,39 @@ exports[`post page renders correctly 1`] = `
         }
       }
     />
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        ⬅ Go back
+      </a>
+    </div>
   </main>
+  <footer
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <hr
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    />
+    <small>
+      © 
+      2021
+      , 
+      The Deetees
+       🎸
+    </small>
+  </footer>
 </div>
 `;

@@ -1,4 +1,4 @@
-import styles from "./music.module.css";
+import styles from "./music.module.scss";
 
 interface Track {
   src: string;

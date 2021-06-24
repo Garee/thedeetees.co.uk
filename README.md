@@ -46,3 +46,4 @@ npm run build
 - [ ] Add photo gallery.
 - [x] Add contact details.
 - [x] Add bio.
+- [ ] Enable image optimization.

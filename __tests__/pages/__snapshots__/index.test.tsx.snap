@@ -7,78 +7,29 @@ exports[`index page renders correctly 1`] = `
   <header
     className="header"
   >
-    <div
+    <img
+      alt="The Deetees"
+      className="borderCircle"
+      height={144}
+      src="/images/icon.jpg"
+      width={144}
+    />
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
       style={
         Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "margin": 0,
-          "maxWidth": "100%",
-          "overflow": "hidden",
-          "position": "relative",
+          "textDecoration": "none",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "maxWidth": "100%",
-          }
-        }
+      <h1
+        className="heading2Xl"
       >
-        <img
-          alt=""
-          aria-hidden={true}
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style={
-            Object {
-              "border": "none",
-              "display": "block",
-              "margin": 0,
-              "maxWidth": "100%",
-              "padding": 0,
-            }
-          }
-        />
-      </div>
-      <img
-        alt="The Deetees"
-        className="borderCircle"
-        decoding="async"
-        src="/_next/image?url=%2Fimages%2Ficon.jpg&w=384&q=75"
-        srcSet="/_next/image?url=%2Fimages%2Ficon.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ficon.jpg&w=384&q=75 2x"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": 0,
-          }
-        }
-      />
-    </div>
-    <h1
-      className="heading2Xl"
-    >
-      The Deetees
-    </h1>
+        The Deetees
+      </h1>
+    </a>
     <nav>
       <a
         href="#about"
@@ -106,8 +57,25 @@ exports[`index page renders correctly 1`] = `
     </nav>
   </header>
   <main>
+    <section>
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen={true}
+        frameBorder="0"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/SIUMdVyDD_8"
+        style={
+          Object {
+            "marginTop": "1rem",
+          }
+        }
+        title="YouTube video player"
+        width="100%"
+      />
+    </section>
     <section
       className="headingMd"
+      id="about"
     >
       <p
         dangerouslySetInnerHTML={
@@ -117,6 +85,178 @@ exports[`index page renders correctly 1`] = `
         }
       />
     </section>
+    <section
+      id="social"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "space-evenly",
+          }
+        }
+      >
+        <a
+          href="https://www.instagram.com/yourdeetees"
+        >
+          <img
+            alt="Instagram"
+            height="30"
+            src="/social/instagram.svg"
+            width="30"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/DeeTeesGlesga"
+        >
+          <img
+            alt="Facebook"
+            height="30"
+            src="/social/facebook.svg"
+            width="30"
+          />
+        </a>
+        <a
+          href="https://twitter.com/deetees3"
+        >
+          <img
+            alt="Twitter"
+            height="33"
+            src="/social/twitter.svg"
+            width="33"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCohjZ-MlZWw0RZoPvKZkq5A"
+        >
+          <img
+            alt="YouTube"
+            height="30"
+            src="/social/youtube.svg"
+            width="30"
+          />
+        </a>
+      </div>
+    </section>
+    <section
+      id="music"
+    >
+      <h2>
+        Music
+      </h2>
+    </section>
+    <section
+      id="shows"
+    >
+      <h2
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        Shows
+      </h2>
+    </section>
+    <section
+      id="posts"
+    >
+      <h2>
+        Latest Posts
+      </h2>
+      <ul
+        className="list"
+      >
+        <li
+          className="listItem"
+        >
+          <a
+            href="/posts/1"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <h3
+              className="headingMd"
+            >
+              Post #1
+            </h3>
+          </a>
+          <small>
+            📰 
+            <time
+              dateTime="2021-01-01"
+            >
+              1 January, 2021
+            </time>
+          </small>
+        </li>
+        <li
+          className="listItem"
+        >
+          <a
+            href="/posts/2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <h3
+              className="headingMd"
+            >
+              Post #2
+            </h3>
+          </a>
+          <small>
+            📰 
+            <time
+              dateTime="2021-01-02"
+            >
+              2 January, 2021
+            </time>
+          </small>
+        </li>
+      </ul>
+    </section>
+    <section
+      id="contact"
+    >
+      <h2>
+        Contact
+      </h2>
+      <p>
+        For any enquiries please send us an
+         
+        <a
+          href="mailto:yourdeetees@gmail.com"
+        >
+          email
+        </a>
+         or get in touch via social media.
+      </p>
+    </section>
   </main>
+  <footer
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <hr
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    />
+    <small>
+      © 
+      2021
+      , 
+      The Deetees
+       🎸
+    </small>
+  </footer>
 </div>
 `;

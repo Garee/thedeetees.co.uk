@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import fs from "fs";
 import path from "path";
 import { GetStaticProps } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import Layout from "../components/layout";
 import Date from "../components/date";
 import Music from "../components/music";
@@ -69,11 +69,11 @@ function Social() {
       style={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       }}
     >
       <a href={social.instagram}>
-        <Image
+        <img
           src="/social/instagram.svg"
           width="30"
           height="30"
@@ -81,18 +81,13 @@ function Social() {
         />
       </a>
       <a href={social.facebook}>
-        <Image
-          src="/social/facebook.svg"
-          width="30"
-          height="30"
-          alt="Facebook"
-        />
+        <img src="/social/facebook.svg" width="30" height="30" alt="Facebook" />
       </a>
       <a href={social.twitter}>
-        <Image src="/social/twitter.svg" width="33" height="33" alt="Twitter" />
+        <img src="/social/twitter.svg" width="33" height="33" alt="Twitter" />
       </a>
       <a href={social.youtube}>
-        <Image src="/social/youtube.svg" width="30" height="30" alt="YouTube" />
+        <img src="/social/youtube.svg" width="30" height="30" alt="YouTube" />
       </a>
     </div>
   );
@@ -115,7 +110,7 @@ export default function Home({
   body,
   posts,
   tracks,
-  shows
+  shows,
 }: HomeProps): JSX.Element {
   return (
     <Layout>
