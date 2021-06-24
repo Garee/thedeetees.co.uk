@@ -1,5 +1,6 @@
 site_url: https://thedeetees.co.uk
 display_url: https://thedeetees.co.uk
+logo_url: /icon.png
 backend:
   name: git-gateway # test-repo https://www.netlifycms.org/docs/git-gateway-backend/
   branch: main
