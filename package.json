@@ -21,6 +21,7 @@
     "clean": "rm -rf .next",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "npm run lint-next && npm run lint-ts && npm run lint-styles",
     "lint-next": "next lint",
