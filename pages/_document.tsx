@@ -9,6 +9,10 @@ class AppDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"
           />
+          <script
+            src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+            defer
+          ></script>
         </Head>
         <body>
           <Main />

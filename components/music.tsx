@@ -1,9 +1,5 @@
+import { Track } from "../lib/audio";
 import styles from "./music.module.scss";
-
-interface Track {
-  src: string;
-  label: string;
-}
 
 interface MusicProps {
   tracks: Track[];
