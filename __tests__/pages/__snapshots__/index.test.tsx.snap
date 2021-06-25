@@ -7,22 +7,24 @@ exports[`index page renders correctly 1`] = `
   <header
     className="header"
   >
-    <img
-      alt="The Deetees"
-      className="borderCircle"
-      height={144}
-      src="/images/icon.jpg"
-      width={144}
-    />
     <a
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
+    >
+      <img
+        alt="The Deetees"
+        className="borderCircle"
+        height={144}
+        src="/icon.png"
+        width={144}
+      />
+    </a>
+    <a
+      className="noDecoration"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       <h1
         className="heading2Xl"
@@ -89,6 +91,8 @@ exports[`index page renders correctly 1`] = `
       >
         <a
           href="https://www.instagram.com/yourdeetees"
+          rel="noreferrer"
+          target="_blank"
         >
           <img
             alt="Instagram"
@@ -99,6 +103,8 @@ exports[`index page renders correctly 1`] = `
         </a>
         <a
           href="https://www.facebook.com/DeeTeesGlesga"
+          rel="noreferrer"
+          target="_blank"
         >
           <img
             alt="Facebook"
@@ -109,6 +115,8 @@ exports[`index page renders correctly 1`] = `
         </a>
         <a
           href="https://twitter.com/deetees3"
+          rel="noreferrer"
+          target="_blank"
         >
           <img
             alt="Twitter"
@@ -119,6 +127,8 @@ exports[`index page renders correctly 1`] = `
         </a>
         <a
           href="https://www.youtube.com/channel/UCohjZ-MlZWw0RZoPvKZkq5A"
+          rel="noreferrer"
+          target="_blank"
         >
           <img
             alt="YouTube"
@@ -221,20 +231,10 @@ exports[`index page renders correctly 1`] = `
     </section>
   </main>
   <footer
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "column",
-      }
-    }
+    className="footer"
   >
     <hr
-      style={
-        Object {
-          "width": "100%",
-        }
-      }
+      className="divider"
     />
     <small>
       © 

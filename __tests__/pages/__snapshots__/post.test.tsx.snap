@@ -7,22 +7,24 @@ exports[`post page renders correctly 1`] = `
   <header
     className="header"
   >
-    <img
-      alt="The Deetees"
-      className="borderCircle"
-      height={144}
-      src="/images/icon.jpg"
-      width={144}
-    />
     <a
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
+    >
+      <img
+        alt="The Deetees"
+        className="borderCircle"
+        height={144}
+        src="/icon.png"
+        width={144}
+      />
+    </a>
+    <a
+      className="noDecoration"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       <h1
         className="heading2Xl"
@@ -90,20 +92,10 @@ exports[`post page renders correctly 1`] = `
     </div>
   </main>
   <footer
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "column",
-      }
-    }
+    className="footer"
   >
     <hr
-      style={
-        Object {
-          "width": "100%",
-        }
-      }
+      className="divider"
     />
     <small>
       © 

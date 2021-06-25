@@ -15,7 +15,7 @@ export default function Shows({ shows }: ShowsProps) {
         <ul key={index}>
           <li>
             <Link href={s.link}>
-              <a>
+              <a target="_blank" rel="noreferrer">
                 <h4 className={styles.heading}>{s.venue}</h4>
               </a>
             </Link>

@@ -6,7 +6,7 @@ import styles from "./social.module.scss";
 export default function Social() {
   return (
     <div className={styles.container}>
-      <a href={social.instagram}>
+      <a href={social.instagram} target="_blank" rel="noreferrer">
         <img
           src="/social/instagram.svg"
           width="30"
@@ -14,13 +14,13 @@ export default function Social() {
           alt="Instagram"
         />
       </a>
-      <a href={social.facebook}>
+      <a href={social.facebook} target="_blank" rel="noreferrer">
         <img src="/social/facebook.svg" width="30" height="30" alt="Facebook" />
       </a>
-      <a href={social.twitter}>
+      <a href={social.twitter} target="_blank" rel="noreferrer">
         <img src="/social/twitter.svg" width="33" height="33" alt="Twitter" />
       </a>
-      <a href={social.youtube}>
+      <a href={social.youtube} target="_blank" rel="noreferrer">
         <img src="/social/youtube.svg" width="30" height="30" alt="YouTube" />
       </a>
     </div>

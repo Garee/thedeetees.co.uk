@@ -6,11 +6,11 @@ export const appName = "The Deetees";
 export const appAuthor = "Gary Blackwood";
 export const appDescription =
   "The official website of the Glaswegian band The Deetees.";
-
+export const appIcon = "/icon.png";
 export const social = {
   twitter: "https://twitter.com/deetees3",
   facebook: "https://www.facebook.com/DeeTeesGlesga",
   youtube: "https://www.youtube.com/channel/UCohjZ-MlZWw0RZoPvKZkq5A",
   instagram: "https://www.instagram.com/yourdeetees",
-  email: "yourdeetees@gmail.com"
+  email: "yourdeetees@gmail.com",
 };
