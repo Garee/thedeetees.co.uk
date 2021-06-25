@@ -2,6 +2,10 @@
 
 This is code for the official website of the Glaswegian band The Deetees.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5f23568b-0837-4bf9-8118-7308a33fe232/deploy-status)](https://app.netlify.com/sites/thedeetees/deploys)
+
+[![Build Status](https://travis-ci.com/Garee/thedeetees.co.uk.svg?branch=main)](https://travis-ci.com/Garee/thedeetees.co.uk)
+
 ## Getting Started
 
 Run the development server:
@@ -36,14 +40,6 @@ To build for production:
 npm run build
 ```
 
-## TODO
+## Future Improvements
 
-- [x] Add social media links.
-- [x] Add audio player.
-- [x] Add YouTube video(s).
-- [x] Add list of posts.
-- [x] Add shows page.
-- [ ] Add photo gallery.
-- [x] Add contact details.
-- [x] Add bio.
-- [ ] Enable image optimization.
+- [ ] Enable next/image optimization.
