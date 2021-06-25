@@ -11,6 +11,7 @@ export interface Post {
   date: string;
   title: string;
   body: string;
+  thumbnail?: string;
 }
 
 export async function getSortedPostsData(): Promise<Post[]> {
@@ -38,8 +39,8 @@ export function getAllPostIds(): Array<{ params: { id: string } }> {
   return fileNames.map((fileName) => {
     return {
       params: {
-        id: fileName.replace(/\.md$/, "")
-      }
+        id: fileName.replace(/\.md$/, ""),
+      },
     };
   });
 }
@@ -50,7 +51,7 @@ export async function getPostData(id: string): Promise<Post> {
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
-  const { date, title } = matterResult.data;
+  const { date, title, thumbnail } = matterResult.data;
 
   // Get the post content HTML.
   const contentHtml = await (
@@ -60,7 +61,8 @@ export async function getPostData(id: string): Promise<Post> {
   return {
     id,
     title,
+    thumbnail,
     date: date.toISOString(),
-    body: contentHtml
+    body: contentHtml,
   };
 }

@@ -6,8 +6,8 @@ backend:
   branch: main
 local_backend: false # https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 publish_mode: editorial_workflow
-media_folder: public/images
-public_folder: images
+media_folder: public/uploads
+public_folder: uploads
 collections:
   - name: "pages"
     label: "Pages"
@@ -19,6 +19,17 @@ collections:
           preview: false
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tracks"
+    label: "Music Tracks"
+    folder: "tracks"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - label: "File"
+        name: "file"
+        widget: "file"
   - name: "post"
     label: "Post"
     folder: "posts"

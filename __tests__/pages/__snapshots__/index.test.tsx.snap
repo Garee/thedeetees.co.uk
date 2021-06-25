@@ -149,9 +149,7 @@ exports[`index page renders correctly 1`] = `
     <section
       id="shows"
     >
-      <h2
-        className="heading"
-      >
+      <h2>
         Shows
       </h2>
     </section>

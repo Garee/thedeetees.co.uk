@@ -10,7 +10,6 @@ body {
   font-size: 18px;
   background-color: #231f20;
   color: #fefefe;
-  scroll-behavior: smooth;
   background-image: url("/background-pattern.png");
 }
 
@@ -30,4 +29,8 @@ a {
 ul {
   padding: 0;
   list-style: none;
+}
+
+h2 {
+  margin-top: 3rem;
 }

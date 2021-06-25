@@ -10,13 +10,13 @@ interface ShowsProps {
 export default function Shows({ shows }: ShowsProps) {
   return (
     <>
-      <h2 className={styles.heading}>Shows</h2>
+      <h2>Shows</h2>
       {shows.map((s: Show, index: number) => (
         <ul key={index}>
           <li>
             <Link href={s.link}>
               <a target="_blank" rel="noreferrer">
-                <h4 className={styles.heading}>{s.venue}</h4>
+                <h3 className={styles.venueHeading}>{s.venue}</h3>
               </a>
             </Link>
             <small>
