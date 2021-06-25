@@ -61,14 +61,10 @@ exports[`index page renders correctly 1`] = `
       <iframe
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen={true}
+        className="iframe"
         frameBorder="0"
         height="315"
         src="https://www.youtube-nocookie.com/embed/SIUMdVyDD_8"
-        style={
-          Object {
-            "marginTop": "1rem",
-          }
-        }
         title="YouTube video player"
         width="100%"
       />
@@ -89,13 +85,7 @@ exports[`index page renders correctly 1`] = `
       id="social"
     >
       <div
-        style={
-          Object {
-            "alignItems": "center",
-            "display": "flex",
-            "justifyContent": "space-evenly",
-          }
-        }
+        className="container"
       >
         <a
           href="https://www.instagram.com/yourdeetees"
@@ -150,11 +140,7 @@ exports[`index page renders correctly 1`] = `
       id="shows"
     >
       <h2
-        style={
-          Object {
-            "marginBottom": 0,
-          }
-        }
+        className="heading"
       >
         Shows
       </h2>
