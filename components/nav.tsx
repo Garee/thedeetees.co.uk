@@ -24,12 +24,14 @@ export default function Nav() {
           <h1 className={utilStyles.heading2Xl}>{appName}</h1>
         </a>
       </Link>
-      <nav>
+      <nav className={styles.nav}>
         <a href="#about">About</a>
         {" / "}
         <a href="#contact">Contact</a>
         {" / "}
         <a href="#music">Music</a>
+        {" / "}
+        <a href="#posts">Posts</a>
         {" / "}
         <a href="#shows">Shows</a>
       </nav>
