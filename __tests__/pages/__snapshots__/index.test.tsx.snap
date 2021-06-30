@@ -12,103 +12,13 @@ exports[`index page renders correctly 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "margin": 0,
-            "maxWidth": "100%",
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "maxWidth": "100%",
-            }
-          }
-        >
-          <img
-            alt=""
-            aria-hidden={true}
-            role="presentation"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-            style={
-              Object {
-                "border": "none",
-                "display": "block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "padding": 0,
-              }
-            }
-          />
-        </div>
-        <noscript>
-          <img
-            alt="The Deetees"
-            className="borderCircle"
-            decoding="async"
-            src="/icon.png"
-            srcSet="/_next/image?url=%2Ficon.png&w=256&q=75 1x, /_next/image?url=%2Ficon.png&w=384&q=75 2x"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-        <img
-          alt="The Deetees"
-          className="borderCircle"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-      </div>
+      <img
+        alt="The Deetees"
+        className="borderCircle"
+        height={144}
+        src="/icon.png"
+        width={144}
+      />
     </a>
     <a
       className="noDecoration"

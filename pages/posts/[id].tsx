@@ -26,13 +26,9 @@ function Thumbnail({ src }: ThumbnailProps) {
   }
 
   return (
-    <Image
-      src={`/${src}`}
-      width="100%"
-      height="100%"
-      alt=""
-      className={styles.thumbnail}
-    />
+    <div className={styles.thumbnail}>
+      <Image src={`/${src}`} layout="fill" alt="" objectFit="cover" />
+    </div>
   );
 }
 
