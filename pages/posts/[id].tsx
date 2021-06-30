@@ -1,11 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
-
 import {
   GetStaticPaths,
   GetStaticPathsContext,
   GetStaticProps,
   GetStaticPropsContext,
 } from "next";
+import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layout";
@@ -26,7 +25,15 @@ function Thumbnail({ src }: ThumbnailProps) {
     return null;
   }
 
-  return <img src={`/${src}`} alt="Post image" className={styles.thumbnail} />;
+  return (
+    <Image
+      src={"/${src}"}
+      width="100%"
+      height="100%"
+      alt=""
+      className={styles.thumbnail}
+    />
+  );
 }
 
 export default function Post({ title, date, body, thumbnail }: PostProps) {

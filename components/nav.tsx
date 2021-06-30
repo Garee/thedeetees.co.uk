@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import Link from "next/link";
 import { appName, appIcon } from "../lib/config";
 import styles from "./nav.module.scss";
@@ -10,7 +9,7 @@ export default function Nav() {
     <header className={styles.header}>
       <Link href="/">
         <a>
-          <img
+          <Image
             src={appIcon}
             className={utilStyles.borderCircle}
             height={144}
