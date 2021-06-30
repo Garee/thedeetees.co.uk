@@ -27,6 +27,6 @@ export function getShow(fileName: string): Show {
     venue,
     date: date.toISOString(),
     link,
-    location
+    location,
   };
 }
