@@ -30,10 +30,6 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="twitter:description" content={appDescription} />
         <meta name="twitter:image" content={appIcon} />
         <meta name="theme-color" content="#ec1b24" />
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        ></meta>
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href={appIcon} />
