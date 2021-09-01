@@ -126,7 +126,6 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                role="presentation"
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                 style={
                   Object {
@@ -139,38 +138,9 @@ exports[`index page renders correctly 1`] = `
                 }
               />
             </div>
-            <noscript>
-              <img
-                alt="Instagram"
-                decoding="async"
-                src="/social/instagram.svg"
-                srcSet="/_next/image?url=%2Fsocial%2Finstagram.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Finstagram.svg&w=64&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
             <img
               alt="Instagram"
+              data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -196,6 +166,38 @@ exports[`index page renders correctly 1`] = `
                 }
               }
             />
+            <noscript>
+              <img
+                alt="Instagram"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fsocial%2Finstagram.svg&w=64&q=75"
+                srcSet="/_next/image?url=%2Fsocial%2Finstagram.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Finstagram.svg&w=64&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
           </div>
         </a>
         <a
@@ -227,7 +229,6 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                role="presentation"
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                 style={
                   Object {
@@ -240,38 +241,9 @@ exports[`index page renders correctly 1`] = `
                 }
               />
             </div>
-            <noscript>
-              <img
-                alt="Facebook"
-                decoding="async"
-                src="/social/facebook.svg"
-                srcSet="/_next/image?url=%2Fsocial%2Ffacebook.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Ffacebook.svg&w=64&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
             <img
               alt="Facebook"
+              data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -297,6 +269,38 @@ exports[`index page renders correctly 1`] = `
                 }
               }
             />
+            <noscript>
+              <img
+                alt="Facebook"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fsocial%2Ffacebook.svg&w=64&q=75"
+                srcSet="/_next/image?url=%2Fsocial%2Ffacebook.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Ffacebook.svg&w=64&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
           </div>
         </a>
         <a
@@ -328,7 +332,6 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                role="presentation"
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMzMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                 style={
                   Object {
@@ -341,38 +344,9 @@ exports[`index page renders correctly 1`] = `
                 }
               />
             </div>
-            <noscript>
-              <img
-                alt="Twitter"
-                decoding="async"
-                src="/social/twitter.svg"
-                srcSet="/_next/image?url=%2Fsocial%2Ftwitter.svg&w=48&q=75 1x, /_next/image?url=%2Fsocial%2Ftwitter.svg&w=96&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
             <img
               alt="Twitter"
+              data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -398,6 +372,38 @@ exports[`index page renders correctly 1`] = `
                 }
               }
             />
+            <noscript>
+              <img
+                alt="Twitter"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fsocial%2Ftwitter.svg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fsocial%2Ftwitter.svg&w=48&q=75 1x, /_next/image?url=%2Fsocial%2Ftwitter.svg&w=96&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
           </div>
         </a>
         <a
@@ -429,7 +435,6 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                role="presentation"
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                 style={
                   Object {
@@ -442,38 +447,9 @@ exports[`index page renders correctly 1`] = `
                 }
               />
             </div>
-            <noscript>
-              <img
-                alt="YouTube"
-                decoding="async"
-                src="/social/youtube.svg"
-                srcSet="/_next/image?url=%2Fsocial%2Fyoutube.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Fyoutube.svg&w=64&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
             <img
               alt="YouTube"
+              data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -499,6 +475,38 @@ exports[`index page renders correctly 1`] = `
                 }
               }
             />
+            <noscript>
+              <img
+                alt="YouTube"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fsocial%2Fyoutube.svg&w=64&q=75"
+                srcSet="/_next/image?url=%2Fsocial%2Fyoutube.svg&w=32&q=75 1x, /_next/image?url=%2Fsocial%2Fyoutube.svg&w=64&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
           </div>
         </a>
       </div>
