@@ -1,6 +1,6 @@
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
+import path from "path";
 import remark from "remark";
 import html from "remark-html";
 
@@ -17,10 +17,12 @@ export interface Post {
 export async function getSortedPostsData(): Promise<Post[]> {
   const fileNames: string[] = fs.readdirSync(postsDirectory);
 
-  const allPostsData: Promise<Post>[] = fileNames.map(async (fileName) => {
-    const id = fileName.replace(/\.md$/, "");
-    return await getPostData(id);
-  });
+  const allPostsData: Promise<Post>[] = fileNames
+    .filter((name) => name !== ".gitkeep")
+    .map(async (fileName) => {
+      const id = fileName.replace(/\.md$/, "");
+      return await getPostData(id);
+    });
 
   return Promise.all(allPostsData).then((allPostsData) => {
     return allPostsData.sort(({ date: a }, { date: b }) => {
@@ -36,13 +38,15 @@ export async function getSortedPostsData(): Promise<Post[]> {
 
 export function getAllPostIds(): Array<{ params: { id: string } }> {
   const fileNames: string[] = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
-    };
-  });
+  return fileNames
+    .filter((name) => name !== ".gitkeep")
+    .map((fileName) => {
+      return {
+        params: {
+          id: fileName.replace(/\.md$/, ""),
+        },
+      };
+    });
 }
 
 export async function getPostData(id: string): Promise<Post> {

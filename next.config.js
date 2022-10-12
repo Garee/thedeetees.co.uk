@@ -8,7 +8,6 @@ const runtimeCaching = require("next-pwa/cache");
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 const config = {
-  target: "serverless",
   reactStrictMode: true,
   productionBrowserSourceMaps: false,
   future: undefined,

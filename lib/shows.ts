@@ -13,7 +13,9 @@ const showsDirectory = path.join(process.cwd(), "shows");
 
 export function getAllShows(): Show[] {
   const fileNames: string[] = fs.readdirSync(showsDirectory);
-  return fileNames.map((fileName) => getShow(fileName));
+  return fileNames
+    .filter((name) => name !== ".gitkeep")
+    .map((fileName) => getShow(fileName));
 }
 
 export function getShow(fileName: string): Show {
